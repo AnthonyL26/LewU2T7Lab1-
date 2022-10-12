@@ -20,12 +20,18 @@ public class Main {
         else if(str2.length()<str1.length()) {
             System.out.println(str1 + " is larger than " + str2);
         }
+        else if(str2.length()==str1.length()) {
+            System.out.println("Both strings have the same length");
+        }
 
         if(str1.compareTo(str2) > 0){
             System.out.println(str2 + " is first alphabetically");
         }
         else if(str2.compareTo(str1) > 0){
             System.out.println(str1 + " is first alphabetically");
+        }
+        else if(str2.equals(str1)){
+            System.out.println("Both Strings have the exact same characters");
         }
 
         if (str1.indexOf(str2) >= 0) {
